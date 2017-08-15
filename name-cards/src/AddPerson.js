@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 export default class AddPerson extends Component {
+
+  onAddPersonClick() {
+    console.log("AddPersonClick")
+    this.props.onPersonAdd("Bright", "male")
+  }
+
   render() {
     return(
       <div>
@@ -16,7 +22,11 @@ export default class AddPerson extends Component {
         </div>
 
         <div>
-          <input type="button" value="Add Person" />
+          <input
+            type="button"
+            value="Add Person"
+            onClick={()=>this.onAddPersonClick()}
+          />
         </div>
       </div>
     )
