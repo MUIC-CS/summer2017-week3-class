@@ -33,6 +33,7 @@ body {
   background-color: rgba(204, 192, 139, 0.79);
   display: inline-flex;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .logo-container {
@@ -45,8 +46,22 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(253, 255, 163, 0.85);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
 }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.74);
 }
+/*
+
+
+
+
+
+
+
+
+
+*/
