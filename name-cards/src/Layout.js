@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export default function Layout({children}) {
   const styles = {
@@ -10,7 +10,6 @@ export default function Layout({children}) {
       backgroundColor: 'red'
     },
     content: {
-      backgroundColor: 'aqua',
       flex: 1
     },
     footer: {
