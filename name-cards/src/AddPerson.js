@@ -4,7 +4,20 @@ export default class AddPerson extends Component {
   render() {
     return(
       <div>
-        Place holder
+        <div>
+        Name: <input type="text" />
+        </div>
+        <div>
+          Gender:
+          <select>
+            <option value="male" > Male </option>
+            <option value="female"> Female </option>
+          </select>
+        </div>
+
+        <div>
+          <input type="button" value="Add Person" />
+        </div>
       </div>
     )
   }
