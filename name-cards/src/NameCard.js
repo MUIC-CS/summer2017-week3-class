@@ -1,11 +1,12 @@
 import React from 'react';
+import './App.css'
 
 export default function NameCard({name, gender}) {
   return (
-    <div>
+    <div className="inline-flex">
       <img
         alt={name}
-        src={`https://avatars.dicebear.com/v1/${gender}/${name}/200.png`}
+        src={`https://avatars.dicebear.com/v1/${gender}/${name}/100.png`}
       />
       <div>
         <div>

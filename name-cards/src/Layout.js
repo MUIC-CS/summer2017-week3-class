@@ -17,7 +17,7 @@ export default function Layout({children}) {
     }
   }
   return (
-    <div>
+    <div style={styles.container}>
       <div style={styles.header}>header</div>
       <div style={styles.content}>
         {children}

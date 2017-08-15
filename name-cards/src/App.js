@@ -46,10 +46,10 @@ class Content extends Component {
     return (
       <div>
         <AddPerson onPersonAdd={(name, gender)=>this.onPersonAdd(name,gender)}/>
-        <div>
+        {/* <div>
           <input type="button" onClick={()=>this.onClick()} value="Click Me!" />
           Count: {count}
-        </div>
+        </div> */}
         <div>
           {allPeople.map((person) => {
             return <NameCard key={person.name} name={person.name} gender={person.gender}/>
