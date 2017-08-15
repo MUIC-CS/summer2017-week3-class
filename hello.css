@@ -35,10 +35,16 @@ body {
   padding: 20px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
 .text-profile {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: rgba(253, 255, 163, 0.85);
 }
 
 .footer {
