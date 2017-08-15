@@ -31,13 +31,34 @@ const allPeople = [
 ]
 
 class App extends Component {
-  render() {
+  constructor(props){
+    super(props)
+    this.state = {
+      count: 0
+    }
+  }
 
+  onClick() {
+    this.setState((st)=>({count: st.count+1}))
+  }
+
+  render() {
+    const {count} = this.state
     return (
       <div className="App">
-        {allPeople.map((person) => {
-          return <NameCard name={person.name} gender={person.gender}/>
-        })}
+        <div>
+          <input type="button" onClick={()=>this.onClick()} value="Click Me!" />
+          Count: {count}
+        </div>
+        <div>
+          {
+            allPeople.map(
+              (person) => {
+                return <NameCard name={person.name} gender={person.gender}/>
+              }
+            )
+          }
+        </div>
       </div>
     );
   }
