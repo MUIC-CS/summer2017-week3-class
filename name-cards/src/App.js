@@ -50,7 +50,7 @@ class Content extends Component {
           <input type="button" onClick={()=>this.onClick()} value="Click Me!" />
           Count: {count}
         </div> */}
-        <div>
+        <div className="flex space-around wrap child-v-space">
           {allPeople.map((person) => {
             return <NameCard key={person.name} name={person.name} gender={person.gender}/>
           })}

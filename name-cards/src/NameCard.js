@@ -3,7 +3,7 @@ import './App.css'
 
 export default function NameCard({name, gender}) {
   return (
-    <div className="inline-flex">
+    <div className="inline-flex name-card">
       <img
         alt={name}
         src={`https://avatars.dicebear.com/v1/${gender}/${name}/100.png`}
