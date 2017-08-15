@@ -49,6 +49,9 @@ class App extends Component {
 
   onPersonAdd(name, gender) {
     console.log('ADDDDDDDDDDDDDDDD!', name, gender)
+    const newPerson = {name, gender} // {name: name, gender: gender}
+    const newAllPeople = [newPerson, ...this.state.allPeople]
+    this.setState({allPeople: newAllPeople})
   }
 
   render() {

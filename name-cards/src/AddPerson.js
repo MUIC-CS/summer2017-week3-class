@@ -10,9 +10,11 @@ export default class AddPerson extends Component {
     }
   }
 
-  onAddPersonClick() {
+  onAddPersonClick(name, gender) {
     console.log("AddPersonClick")
-    this.props.onPersonAdd("Bright", "male")
+    if(name!==''){
+      this.props.onPersonAdd(name, gender)
+    }
   }
 
   onNameChange(e){
@@ -26,6 +28,7 @@ export default class AddPerson extends Component {
   }
 
   render() {
+    const {name, gender} = this.state
     return(
       <div>
         <div>
@@ -51,7 +54,7 @@ export default class AddPerson extends Component {
           <input
             type="button"
             value="Add Person"
-            onClick={()=>this.onAddPersonClick()}
+            onClick={()=>this.onAddPersonClick(name, gender)}
           />
         </div>
       </div>
