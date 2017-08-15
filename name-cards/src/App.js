@@ -24,8 +24,27 @@ function NameCard({name, gender}) {
   )
 }
 
+function Layout({children}) {
+  return (
+    <div>
+      <div>header</div>
+      <div>
+        {children}
+      </div>
+      <div>footer</div>
+    </div>
+  )
+}
 
-class App extends Component {
+function App() {
+  return (
+    <Layout>
+      <Content/>
+    </Layout>
+  )
+}
+
+class Content extends Component {
   constructor(props){
     super(props)
 
@@ -57,7 +76,7 @@ class App extends Component {
   render() {
     const {count, allPeople} = this.state
     return (
-      <div className="App">
+      <div>
         <AddPerson onPersonAdd={(name, gender)=>this.onPersonAdd(name,gender)}/>
         <div>
           <input type="button" onClick={()=>this.onClick()} value="Click Me!" />
