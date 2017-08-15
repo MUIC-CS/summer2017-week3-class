@@ -31,7 +31,14 @@ body {
 
 .logo {
   background-color: rgba(204, 192, 139, 0.79);
-  display: inline-block;
+  display: inline-flex;
+  padding: 20px;
+}
+
+.text-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .footer {
