@@ -7,22 +7,26 @@ export default function Layout({children}) {
       flexDirection: 'column'
     },
     header:{
-      backgroundColor: 'red'
+      backgroundColor: 'rgba(26, 26, 26, 0.88)',
+      color: 'white'
     },
     content: {
-      flex: 1
+      flex: 1,
+      paddingTop: 20,
+      paddingBottom: 20
     },
     footer: {
-      backgroundColor: 'blue'
+      backgroundColor: 'rgba(26, 26, 26, 0.88)',
+      color: 'white'
     }
   }
   return (
     <div style={styles.container}>
-      <div style={styles.header}>header</div>
+      <div style={styles.header}><h3>Header</h3></div>
       <div style={styles.content}>
         {children}
       </div>
-      <div style={styles.footer}>footer</div>
+      <div style={styles.footer}><h3>Footer</h3></div>
     </div>
   )
 }

@@ -61,7 +61,7 @@
 }
 
 .name-card {
-  background-color: rgb(189, 189, 189);
+  background-color: rgba(189, 189, 189,0.7);
   padding: 20px;
   border-radius: 10px;
 }
