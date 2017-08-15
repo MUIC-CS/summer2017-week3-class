@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AddPerson from './AddPerson'
 
 function NameCard({name, gender}) {
   return (
     <div>
-      <img src={`https://avatars.dicebear.com/v1/${gender}/${name}/200.png`} />
+      <img
+        alt={name}
+        src={`https://avatars.dicebear.com/v1/${gender}/${name}/200.png`}
+      />
       <div>
         <div>
           Name: {name}
@@ -46,6 +49,7 @@ class App extends Component {
     const {count} = this.state
     return (
       <div className="App">
+        <AddPerson/>
         <div>
           <input type="button" onClick={()=>this.onClick()} value="Click Me!" />
           Count: {count}
@@ -54,7 +58,7 @@ class App extends Component {
           {
             allPeople.map(
               (person) => {
-                return <NameCard name={person.name} gender={person.gender}/>
+                return <NameCard key={person.name} name={person.name} gender={person.gender}/>
               }
             )
           }
