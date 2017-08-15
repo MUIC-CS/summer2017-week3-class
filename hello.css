@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0px;
+  height:100%;
+  background-image: url(https://source.unsplash.com/alS7ewQ41M8/1600x900);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  background-color: rgba(64, 64, 64,0.5);
+}
+
+.content {
+  background-color: rgba(158, 158, 158, 0.68);
+  flex: 1;
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  background-color: rgba(204, 192, 139, 0.79);
+  display: inline-block;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.74);
+}
